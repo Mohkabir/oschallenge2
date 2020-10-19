@@ -8,6 +8,14 @@
   outline: none;
 }
 
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1em;
+}
+
 body {
   font-size: 15px;
   background-color: #F5F5F5;
@@ -129,16 +137,16 @@ body main .section_1 .column_1 .button {
           justify-content: space-evenly;
   width: 100px;
   background-color: #56AED4;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.288);
   padding: 0.2em;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 14px;
   margin: 1em 0em;
   margin-top: 1em;
 }
 
 body main .section_1 .column_1 .button img {
-  width: 20px;
+  width: 10px;
   border-radius: 50px;
 }
 
@@ -221,12 +229,12 @@ body main .section_1 .column_3 .box1 .button {
   color: #fff;
   padding: 0.2em;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 14px;
   margin: 1em 0em;
 }
 
 body main .section_1 .column_3 .box1 .button img {
-  width: 20px;
+  width: 10px;
   border-radius: 50px;
 }
 
@@ -246,12 +254,12 @@ body main .section_1 .column_3 .box2 .button {
   color: #fff;
   padding: 0.2em;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 14px;
   margin: 1em 0em;
 }
 
 body main .section_1 .column_3 .box2 .button img {
-  width: 20px;
+  width: 10px;
   border-radius: 50px;
 }
 
@@ -271,12 +279,12 @@ body main .section_1 .column_3 .box3 .button {
   color: #fff;
   padding: 0.2em;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 14px;
   margin: 1em 0em;
 }
 
 body main .section_1 .column_3 .box3 .button img {
-  width: 20px;
+  width: 10px;
   border-radius: 50px;
 }
 
@@ -425,7 +433,7 @@ body main .section_4 .box2 div h3 {
 }
 
 body main .section_4 .box2 form input[type=email] {
-  width: 100%;
+  width: 80%;
   padding: 0.5em;
   border-radius: 10px;
   margin: 0.5em 0em;
