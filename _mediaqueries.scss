@@ -1,19 +1,23 @@
-@media (min-width: 750px){
-  h2{
+@media (min-width: 750px) {
+  h2 {
     font-size: 1em;
   }
-  body{
+
+  body {
     font-size: 20px;
     background-color: #F5F5F5;
-    .img_window{
+
+    .img_window {
       width: 90%;
       margin: 0 auto;
       position: relative;
-      img{
+
+      img {
         max-width: 100%;
         height: auto;
       }
-      .img_tracker{
+
+      .img_tracker {
         width: 10em;
         padding: 0.9em 3em;
         display: flex;
@@ -22,178 +26,213 @@
         position: absolute;
         bottom: 0;
         left: 45%;
-        .trackers{
+
+        .trackers {
           padding: 0.7em;
           margin: 0em 0.3em;
         }
       }
     }
-    header{
+
+    header {
       width: 90%;
       margin: 0 auto;
       padding: 0.5em;
       background-color: #272727;
       color: #fff;
       display: flex;
-      .transform{
+      margin-top: -7px;
+
+      .transform {
         width: 35%;
-          padding: 1em;
-          margin: 0em auto;
-          text-align: center;
-            .transform-icon{
-              width: 30px;
-              font-size: 30px;
-              transition: 1s;
-              &:hover{
-              transform: rotateZ(360deg);
-              }
-            }
-        .transform-text{
+        padding: 1em;
+        margin: 0em auto;
+        text-align: center;
+
+        .transform-icon {
+          width: 30px;
+          font-size: 30px;
+          transition: 1s;
+
+          &:hover {
+            transform: rotateZ(360deg);
+          }
+        }
+
+        .transform-text {
           font-size: 1.7em;
           font-weight: 500;
           margin-left: 0.3em;
         }
       }
-      .navigation{
+
+      .navigation {
         width: 65%;
         position: relative;
         padding-bottom: 0em;
-          .menu{
-            display: none;
-          }
-          nav{
-           background-color: #000000;
-           margin-top: 0.5em;
-           width:100%;
-           margin: 0 auto;
-           position: static;
-           display: block;
-           border-top: 3px solid #272727;
-           ul{
-             list-style-type: none;
-             display: flex;
-             padding: 0em;
-             margin: 0em;
-             li{
-                list-style-type: none;
-                margin: 0em;
-                padding: 2em 0em;
-                background-color: #333333;
-               a{
-               margin:0em;
-               padding: 0;
-               color: #fff;
-               text-transform: capitalize;
-               text-decoration: none;
-               font-size: 1.1em;
-               }
-                &:hover{
-              border-top: 3px solid #56AED4;
+
+        .menu {
+          display: none;
+        }
+
+        nav {
+          background-color: #000000;
+          margin-top: 0.5em;
+          width: 100%;
+          margin: 0 auto;
+          position: static;
+          display: block;
+          border-top: 3px solid #272727;
+
+          ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0em;
+            margin: 0em;
+
+            li {
+              list-style-type: none;
+              margin: 0em;
+              padding: 2em 0em;
               background-color: #333333;
-                }
+
+              a {
+                margin: 0em;
+                padding: 0;
+                color: #fff;
+                text-transform: capitalize;
+                text-decoration: none;
+                font-size: 1.1em;
+              }
+
+              &:hover {
+                border-top: 3px solid #56AED4;
+                background-color: #333333;
               }
             }
           }
         }
+      }
     }
-    main{
+
+    main {
       width: 90%;
       margin: 0em auto;
-      .section_1{
+
+      .section_1 {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 15px;
         padding-top: 1em;
-        .column_1{
+
+        .column_1 {
           grid-column: span 4;
         }
-        .column_2{
+
+        .column_2 {
           grid-column: span 4;
         }
-        .column_3{
+
+        .column_3 {
           grid-column: span 4;
         }
       }
-      .section_2{
-        .sub_section2{
+
+      .section_2 {
+        .sub_section2 {
           display: grid;
           grid-template-columns: repeat(12, 1fr);
           gap: 15px;
-          .logo{
+
+          .logo {
             grid-column: span 4;
             width: 100%;
             margin: 0em 0em;
-            img{
+
+            img {
               border-radius: 150px;
               width: 100%;
               transition: 1s;
             }
           }
-          div{
+
+          div {
             grid-column: span 8;
             margin: 1em 0em;
-          }     
+          }
         }
       }
-      .section_3{
+
+      .section_3 {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 15px;
         margin: 5em 0em;
-        img{
+
+        img {
           border-radius: 80px;
           width: 40%;
         }
-        .box1{
+
+        .box1 {
           grid-column: span 6;
           margin: 0em 0em;
         }
-        .box2{
+
+        .box2 {
           grid-column: span 6;
           text-align: center;
           margin: 0em 0em;
         }
       }
-      .section_4{
+
+      .section_4 {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 15px;
         background-color: #fff;
         padding: 1em;
-        .box1{
+
+        .box1 {
           grid-column: span 3;
           margin-bottom: 0em;
         }
-        .box2{
+
+        .box2 {
           grid-column: span 3;
-          .social_media{
-            img{
+
+          .social_media {
+            img {
               margin: 0.4em;
             }
           }
         }
-        .box3{
+
+        .box3 {
           grid-column: span 3;
           margin: 0em 0em;
         }
-        .box4{
+
+        .box4 {
           grid-column: span 3;
           margin: 0em 0em;
         }
       }
     }
-    .transform2{
+
+    .transform2 {
       border: 1px solid;
       width: 200px;
       margin: 2em auto;
       display: flex;
       padding: 0.7em;
     }
-    footer{
+
+    footer {
       text-align: center;
       margin: 5em 0em;
     }
   }
-  
-  
+
+
 }
