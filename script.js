@@ -126,7 +126,9 @@ function transform() {
   let getSec = document.querySelector('.section_4');
 
   if (getb.classList.contains('.dark')) {
-    getb.style.backgroundColor = '#fff';
+    getb.style.backgroundColor = '#F5F5F5';
+    getb.style.color = '#000';
+    getSec.style.backgroundColor = '#fff';
     getb.classList.remove('.dark');
   } else {
     getb.style.backgroundColor = '#272727';
