@@ -18,22 +18,30 @@ h2 {
 
 .underline {
   width: 100%;
-  padding: 0.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0em;
+  margin: 0em;
 }
 
 .underline .color {
   width: 20%;
   background-color: #56AED4;
-  padding: 0.2em;
+  padding: 0.1em;
 }
 
 .underline .nuetral {
   width: 80%;
   background-color: #E1E0DF;
-  padding: 0.2em;
+  padding: 0.05em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.dark {
+  background-color: #272727;
+  color: #fff;
 }
 
 body {
@@ -43,6 +51,7 @@ body {
 
 body .img_window {
   border: 1px solid #E1E0DF;
+  border-bottom: none;
   width: 90%;
   margin: 0 auto;
   position: relative;
@@ -81,6 +90,7 @@ body header {
   width: 90%;
   margin: 0 auto;
   padding: 0.5em;
+  margin-top: -5px;
   background-color: #272727;
   color: #fff;
 }
@@ -90,6 +100,7 @@ body header .transform {
   width: 100%;
   margin: 0em auto;
   text-align: center;
+  cursor: pointer;
 }
 
 body header .transform .transform-icon {
@@ -153,7 +164,6 @@ body header .navigation nav {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #000000;
-  margin-top: 0.5em;
   width: 90%;
   margin: 0 auto;
   position: absolute;
@@ -431,9 +441,9 @@ body main .section_3 .box2 {
 }
 
 body main .section_3 .box2 .change_container {
-  font-size: 1.3em;
+  font-size: 1.1em;
   border: 2px solid #E1E0DF;
-  padding: 2em;
+  padding: 1em;
 }
 
 body main .section_3 .box2 .change_container:hover {
@@ -446,6 +456,20 @@ body main .section_3 .box2 .change_container .change_2 {
 
 body main .section_3 .box2 .change_container .change_3 {
   display: none;
+}
+
+body main .section_3 .box2 div {
+  text-align: left;
+  padding: 0em;
+  margin: 0em;
+}
+
+body main .section_3 .box2 div .glyphicon-triangle-bottom {
+  font-size: 45px;
+  font-weight: normal;
+  color: #E1E0DF;
+  margin-top: -12px;
+  margin-left: 20px;
 }
 
 body main .section_3 .box2 .name {
@@ -547,7 +571,7 @@ body main .section_4 .box2 .social_media {
 
 body main .section_4 .box2 .social_media img {
   width: 50px;
-  margin: 0em 0.5em;
+  margin: 0.5em;
   border-radius: 20px;
   border: 1px solid;
   -webkit-transition: 1s;
@@ -562,6 +586,7 @@ body main .section_4 .box2 .social_media img:hover {
 
 body main .section_4 .box2 .social_media .icon1:hover {
   background-color: #3B5999;
+  color: #fff;
 }
 
 body main .section_4 .box2 .social_media .icon2:hover {
@@ -704,6 +729,7 @@ body footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: -7px;
   }
   body header .transform {
     width: 35%;
