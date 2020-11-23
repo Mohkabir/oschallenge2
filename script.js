@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.menu').click(function () {
-    $('.mainNav').slideToggle()
+    $('.toggle_nav').slideToggle()
   });
 
   $('#top').click(function () {
@@ -24,7 +24,15 @@ window.onload = function () {
   let getTracker2 = document.querySelector('.tracker_2');
   let getTracker3 = document.querySelector('.tracker_3');
 
+
+  let getText1 = document.querySelector('.text1');
+  let getText2 = document.querySelector('.text2');
+  let getText3 = document.querySelector('.text3');
+
   let currentImg = 1;
+
+
+  
 
 
   setInterval(imgTransform, 3000);
@@ -35,16 +43,28 @@ window.onload = function () {
       getTracker1.style.backgroundColor = '#272727';
       getTracker2.style.backgroundColor = '#686868';
       getTracker3.style.backgroundColor = '#686868';
+
+      getText1.style.display = 'block';
+      getText2.style.display = 'none';
+      getText3.style.display = 'none';
     } else if (currentImg === 2) {
       getImgWindow.setAttribute('src', './images/bg2.jpg');
       getTracker2.style.backgroundColor = '#272727';
       getTracker1.style.backgroundColor = '#686868';
       getTracker3.style.backgroundColor = '#686868';
+
+      getText2.style.display = 'block';
+      getText1.style.display = 'none';
+      getText3.style.display = 'none';
     } else if (currentImg === 3) {
       getImgWindow.setAttribute('src', './images/bg3.jpg');
       getTracker3.style.backgroundColor = '#272727';
       getTracker1.style.backgroundColor = '#686868';
       getTracker2.style.backgroundColor = '#686868';
+
+      getText3.style.display = 'block';
+      getText2.style.display = 'none';
+      getText1.style.display = 'none';
     }
 
     currentImg++;
@@ -55,14 +75,25 @@ window.onload = function () {
       currentImg = 3;
     }
   }
+
+
   getTracker1.onclick = function () {
-    currentImg = 1;
+      getImgWindow.setAttribute('src', './images/bg1.jpg');
+      getTracker1.style.backgroundColor = '#272727';
+      getTracker2.style.backgroundColor = '#686868';
+      getTracker3.style.backgroundColor = '#686868';
   }
   getTracker2.onclick = function () {
-    currentImg = 2;
+    getImgWindow.setAttribute('src', './images/bg2.jpg');
+    getTracker2.style.backgroundColor = '#272727';
+    getTracker1.style.backgroundColor = '#686868';
+    getTracker3.style.backgroundColor = '#686868';
   }
   getTracker3.onclick = function () {
-    currentImg = 3;
+    getImgWindow.setAttribute('src', './images/bg3.jpg');
+      getTracker3.style.backgroundColor = '#272727';
+      getTracker1.style.backgroundColor = '#686868';
+      getTracker2.style.backgroundColor = '#686868';
   }
 
 
