@@ -28,7 +28,8 @@ img {
 h2 {
   font-size: 1em;
 }
-.straight_line{
+
+.straight_line {
   width: 100%;
   padding: 0.1em;
   background-color: #E1E0DF;
@@ -62,38 +63,42 @@ h2 {
 }
 
 body {
-  
+
   background-color: #F5F5F5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-h3,h2{
-font-size: 1.5em;
-}
+
+  h3,
+  h2 {
+    font-size: 1.5em;
+  }
+
   .img_window {
     border: 1px solid #E1E0DF;
     border-bottom: none;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    .text{
-     display: none;
-      div{
 
-      }
+    .text {
+      display: none;
+
+      div {}
     }
 
-    .bg{
+    .bg {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0em;
       background-color: rgba(0, 0, 0, 0.5);
     }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
 
     .img_tracker {
       width: 60px;
@@ -162,17 +167,18 @@ font-size: 1.5em;
         margin: 0em auto;
         background-color: #000;
         color: #fff;
-        padding: 0.4em 0.5em;
+        padding: 0.2em 0.5em;
         cursor: pointer;
         align-items: center;
 
         p {
           width: 95%;
         }
-          .glyphicon-chevron-down {
-            width: 20px;
-            font-size: 10px;
-          }
+
+        .glyphicon-chevron-down {
+          width: 20px;
+          font-size: 10px;
+        }
       }
 
       nav {
@@ -181,7 +187,7 @@ font-size: 1.5em;
         margin: 0em auto;
         z-index: 20;
         align-self: flex-end;
-      
+
 
         ul {
           display: none;
@@ -194,26 +200,31 @@ font-size: 1.5em;
           color: #000;
           text-align: left;
           overflow-y: scroll;
-          .fa{
+
+          .fa {
             display: none;
           }
-          div{
+
+          div {
             margin: 0em;
             padding: 0em;
             text-align: left;
           }
-          a, li{
+
+          a,
+          li {
             text-decoration: none;
             color: #000000;
             display: block;
             padding-left: 5px;
-            &:hover{
+
+            &:hover {
               background-color: #0086ff;
               color: #ffffff;
             }
           }
-        
-          
+
+
         }
       }
     }
@@ -320,9 +331,19 @@ font-size: 1.5em;
         background-color: rgba(225, 225, 225, 0.9);
         padding: 2em;
 
-        .glyphicon-arrow-right {
-          width: 15px;
+        .arrow_right {
+          display: flex;
+          justify-content: space-between;
+
+          .glyphicon-arrow-right {
+            width: 3%;
+          }
+
+          span {
+            width: 95%;
+          }
         }
+
 
         .logo {
           width: 40%;
@@ -347,12 +368,13 @@ font-size: 1.5em;
           font-size: 0.8em;
           text-align: center;
           cursor: pointer;
+          margin-right: 15px;
         }
 
         .orange {
           background-color: #FF9900;
           color: #fff;
-          width: 90px;
+          width: 105px;
           border-radius: 5px;
           padding: 0.3em 0em;
           font-size: 0.8em;
@@ -364,6 +386,7 @@ font-size: 1.5em;
 
     .section_3 {
       margin-bottom: 6em;
+
       img {
         border-radius: 80px;
         width: 70%;
@@ -422,7 +445,7 @@ font-size: 1.5em;
             color: #E1E0DF;
             margin-top: -12px;
             margin-left: 20px;
-           
+
           }
         }
 
@@ -437,10 +460,11 @@ font-size: 1.5em;
           margin: 0em auto;
 
           .change_tracker {
-            width: 1em;
-            border: 3px solid #000;
-            padding: 0.5em;
+            width: 1px;
+            border: 1px solid #000;
+            padding: 0.4em;
             border-radius: 60px;
+            margin: 3px;
           }
         }
       }
@@ -497,7 +521,7 @@ font-size: 1.5em;
           }
 
           p {
-            margin: 1em 0em;
+            margin: 0.5em 0em;
           }
         }
 
@@ -506,7 +530,7 @@ font-size: 1.5em;
             width: 80%;
             padding: 0.5em;
             border-radius: 10px;
-            margin: 1.5em 0em;
+            margin: 0.5em 0em;
             border: 2px solid #E1E0DF;
           }
 
@@ -531,25 +555,29 @@ font-size: 1.5em;
           margin: 0.5em;
           display: flex;
           flex-wrap: wrap;
+
           div {
-            width: 45px;
+            width: 40px;
             text-align: center;
             margin: 0.3em;
-            padding: 0.5em 0.6em;
+            padding: 0.5em 0.4em;
             border-radius: 60px;
             transition: 700ms;
             background-color: #E1E0DF;
-            span {
-              font-size: 25px;
-            }
-            &:hover{
 
-               
-                  transform: rotateZ(360deg);
-                  color: #fff;
-                
+            span {
+              font-size: 16px;
+            }
+
+            &:hover {
+
+
+              transform: rotateZ(360deg);
+              color: #fff;
+
             }
           }
+
           .facebook {
             &:hover {
               background-color: #3B5999;
@@ -640,23 +668,26 @@ font-size: 1.5em;
     margin: 0em auto;
     margin-top: -35px;
     display: flex;
-    padding: 0.3em 0.5em;
+    padding: 0.2em 0.5em;
     border-radius: 10px;
     background-color: #34495E;
     color: #fff;
     cursor: pointer;
+
     &:hover {
       background-color: #629CC0;
-      .glyphicon{
+
+      .glyphicon {
         transform: rotateZ(360deg);
       }
-     
+
     }
+
     span {
       font-size: 1em;
       font-weight: bold;
       margin-top: 0.5em;
-      
+
     }
 
     .glyphicon {
@@ -666,13 +697,13 @@ font-size: 1.5em;
       margin-bottom: 0.4em;
       transition: 1s;
 
-    
+
     }
   }
 
   footer {
     text-align: center;
-    margin: 5em 0em;
+    margin: 2em 0em;
   }
 }
 

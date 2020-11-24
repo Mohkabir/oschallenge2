@@ -16,7 +16,7 @@
   }
 
   body {
-    font-size: 20px;
+    font-size: 16px;
     background-color: #F5F5F5;
 
     .img_window {
@@ -90,31 +90,29 @@
         transform: translate(-50%, -0%);
         bottom: 0em;
 
-       
+
       }
     }
 
     header {
       width: 100%;
       margin: 0 auto;
-      padding: 0.5em;
+      padding: 0.5em 0em;
       background-color: #272727;
       color: #fff;
       display: flex;
+      justify-content: space-between;
       margin-top: -7px;
 
       .transform {
         width: 40%;
         padding: 1em;
-        margin: 0em auto;
-        text-align: center;
-        align-items: center;
+        margin: 0em;
 
         .transform-icon {
           width: 50px;
           font-size: 50px;
           transition: 1s;
-          margin-top: 20px;
 
           &:hover {
             transform: rotateZ(360deg);
@@ -122,31 +120,29 @@
         }
 
         .transform-text {
-          font-size: 1.7em;
+          font-size: 2.3em;
           font-weight: 500;
           margin-left: 0.3em;
         }
       }
 
       .navigation {
-        width: 60%;
+        width: 50%;
         position: relative;
-        padding-bottom: 0em;
+        padding: 0em;
+        text-align: right;
+
         .menu {
           display: none;
         }
 
         nav {
-          width: 50%;
+          width: 100%;
           position: relative;
-          width: 90%;
           margin: 0em;
           padding: 0em;
           z-index: 20;
           box-sizing: border-box;
-         
-
-         
 
           ul {
             position: static;
@@ -176,18 +172,22 @@
               display: inline-block;
               padding-left: 0px;
               transition: 500ms;
-              &:hover{
+
+              &:hover {
                 background-color: #50C6C6;
               }
 
             }
-            i{
+
+            i {
               color: #fff;
             }
-            a{
-              &:hover{
+
+            a {
+              &:hover {
                 background-color: #50C6C6;
               }
+
               color: #fff;
               transition: 500ms;
             }
@@ -199,6 +199,9 @@
               padding: 45px 5px;
               width: 80px;
               text-align: center;
+              font-size: 0.8em;
+              text-transform: uppercase;
+
 
               &:hover {
                 background-color: #272727;
@@ -207,6 +210,9 @@
             }
 
             .main {
+              font-size: 0.8em;
+              text-transform: uppercase;
+
               &:hover {
                 background-color: #272727;
                 color: #fff;
@@ -432,7 +438,7 @@
         grid-template-columns: repeat(12, 1fr);
         gap: 15px;
 
-        padding: 0em 2em;
+        padding: 4em 2em 2em;
 
         .column_1 {
           grid-column: span 4;
@@ -540,15 +546,64 @@
           margin-bottom: 0em;
         }
 
+
         .box2 {
           grid-column: span 3;
 
-          .social_media {
-            img {
-              margin: 0.4em;
+          div {
+            h3 {
+              font-size: 1.5em;
+              margin-bottom: 0.5em;
+            }
+
+            p {
+              margin: 0.4em 0em;
             }
           }
+
+          form {
+            input[type=email] {
+              padding: 0.5em;
+              width: 100%;
+            }
+
+            input[type=submit] {
+              width: 100px;
+              padding: 0.2em 0.5em;
+            }
+          }
+
+          .social_media {
+            margin: 0.5em;
+            display: flex;
+            flex-wrap: wrap;
+
+            div {
+              width: 42px;
+              text-align: center;
+              margin: 0.3em;
+              padding: 0.4em 0.6em;
+              border-radius: 60px;
+              transition: 700ms;
+              background-color: #E1E0DF;
+
+              span {
+                font-size: 20px;
+              }
+
+              &:hover {
+
+
+                transform: rotateZ(360deg);
+                color: #fff;
+
+              }
+            }
+
+
+          }
         }
+
 
         .box3 {
           grid-column: span 3;
@@ -568,12 +623,12 @@
       margin: 2em auto;
       margin-top: -35px;
       display: flex;
-      padding: 0.7em;
+      padding: 0.5em;
     }
 
     footer {
       text-align: center;
-      margin: 5em 0em;
+      margin: 2em 0em;
     }
   }
 

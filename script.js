@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.menu').click(function () {
-    $('.toggle_nav').slideToggle()
+    $('.toggle_nav').toggle()
   });
 
   $('#top').click(function () {
@@ -32,7 +32,7 @@ window.onload = function () {
   let currentImg = 1;
 
 
-  
+
 
 
   setInterval(imgTransform, 3000);
@@ -78,10 +78,10 @@ window.onload = function () {
 
 
   getTracker1.onclick = function () {
-      getImgWindow.setAttribute('src', './images/bg1.jpg');
-      getTracker1.style.backgroundColor = '#272727';
-      getTracker2.style.backgroundColor = '#686868';
-      getTracker3.style.backgroundColor = '#686868';
+    getImgWindow.setAttribute('src', './images/bg1.jpg');
+    getTracker1.style.backgroundColor = '#272727';
+    getTracker2.style.backgroundColor = '#686868';
+    getTracker3.style.backgroundColor = '#686868';
   }
   getTracker2.onclick = function () {
     getImgWindow.setAttribute('src', './images/bg2.jpg');
@@ -91,9 +91,9 @@ window.onload = function () {
   }
   getTracker3.onclick = function () {
     getImgWindow.setAttribute('src', './images/bg3.jpg');
-      getTracker3.style.backgroundColor = '#272727';
-      getTracker1.style.backgroundColor = '#686868';
-      getTracker2.style.backgroundColor = '#686868';
+    getTracker3.style.backgroundColor = '#272727';
+    getTracker1.style.backgroundColor = '#686868';
+    getTracker2.style.backgroundColor = '#686868';
   }
 
 
@@ -141,6 +141,35 @@ window.onload = function () {
     if (currentText > 3) {
       currentText = 1;
     }
+
+
+    getChangeTracker1.onclick = function () {
+      getChange1.style.display = 'block';
+      getChange2.style.display = 'none';
+      getChange3.style.display = 'none';
+
+      getChangeTracker1.style.backgroundColor = '#ffffff';
+      getChangeTracker2.style.backgroundColor = '#686868';
+      getChangeTracker3.style.backgroundColor = '#686868';
+    }
+    getChangeTracker2.onclick = function () {
+      getChange1.style.display = 'none';
+      getChange2.style.display = 'block';
+      getChange3.style.display = 'none';
+
+      getChangeTracker1.style.backgroundColor = '#686868';
+      getChangeTracker3.style.backgroundColor = '#686868';
+      getChangeTracker2.style.backgroundColor = '#ffffff';
+    }
+    getChangeTracker3.onclick = function () {
+      getChange1.style.display = 'none';
+      getChange2.style.display = 'none';
+      getChange3.style.display = 'block';
+
+      getChangeTracker1.style.backgroundColor = '#686868';
+      getChangeTracker2.style.backgroundColor = '#686868';
+      getChangeTracker3.style.backgroundColor = '#ffffff';
+    }
   }
 
 
@@ -162,9 +191,9 @@ function transform() {
     getSec.style.backgroundColor = '#fff';
     getb.classList.remove('.dark');
   } else {
-    getb.style.backgroundColor = '#272727';
+    getb.style.backgroundColor = 'rgba(39, 39, 39, 0.8';
     getb.style.color = '#fff';
-    getSec.style.backgroundColor = '#272727';
+    getSec.style.backgroundColor = 'rgba(39, 39, 39, 0.8';
     getb.classList.add('.dark');
   }
 }
