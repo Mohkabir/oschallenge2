@@ -82,18 +82,30 @@ window.onload = function () {
     getTracker1.style.backgroundColor = '#272727';
     getTracker2.style.backgroundColor = '#686868';
     getTracker3.style.backgroundColor = '#686868';
+
+    getText1.style.display = 'block';
+    getText2.style.display = 'none';
+    getText3.style.display = 'none';
   }
   getTracker2.onclick = function () {
     getImgWindow.setAttribute('src', './images/bg2.jpg');
     getTracker2.style.backgroundColor = '#272727';
     getTracker1.style.backgroundColor = '#686868';
     getTracker3.style.backgroundColor = '#686868';
+
+    getText2.style.display = 'block';
+    getText1.style.display = 'none';
+    getText3.style.display = 'none';
   }
   getTracker3.onclick = function () {
     getImgWindow.setAttribute('src', './images/bg3.jpg');
     getTracker3.style.backgroundColor = '#272727';
     getTracker1.style.backgroundColor = '#686868';
     getTracker2.style.backgroundColor = '#686868';
+
+    getText3.style.display = 'block';
+    getText2.style.display = 'none';
+    getText1.style.display = 'none';
   }
 
 
