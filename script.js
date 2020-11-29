@@ -110,7 +110,7 @@ window.onload = function () {
 
 
 
-  setInterval(textChanger, 3000);
+  setInterval(textChanger, 9000);
 
   let currentText = 1;
   let getChange1 = document.querySelector('.change_1');

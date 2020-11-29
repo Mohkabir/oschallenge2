@@ -17,8 +17,6 @@
 
   body {
     font-size: 16px;
-    background-color: #F5F5F5;
-
     .img_window {
       width: 100%;
       margin: 0 auto;
@@ -42,17 +40,19 @@
           display: none;
 
           h1 {
-            font-size: 6em;
+            font-size: 10em;
             font-weight: bolder;
             font-family: Georgia, 'Times New Roman', Times, serif;
             animation-name: rightflow;
             animation-duration: 500ms;
+            margin: 0;
           }
 
           h2 {
-            font-size: 2em;
+            font-size: 3em;
             animation-name: rightflow;
             animation-duration: 1s;
+            margin: 0;
           }
 
           button {
@@ -106,10 +106,12 @@
 
       .transform {
         width: 450px;
-        padding: 1em 0em;
+        padding: 1.1em 0em;
+        padding-top: 1.5em;
         margin: 0em;
         text-align: left;
-        padding-left: 10px;
+        padding-left: 27px;
+        position: relative;
 
 
 
@@ -127,6 +129,8 @@
           font-size: 2.3em;
           font-weight: 500;
           margin-left: 0.3em;
+          position: absolute;
+          top: 23px;
         }
       }
 
@@ -153,18 +157,21 @@
             position: static;
             width: 100%;
             background-color: #272727;
-            padding: 0.2em;
+            padding: 0em;
             border: none;
             color: #fff;
             text-align: center;
             overflow-y: unset;
             display: flex;
             margin: 0;
+            list-style-type: none;
 
             .fa {
               display: inline-block;
               width: 10px;
             }
+            
+          
 
             div {
               margin: 0em;
@@ -197,16 +204,20 @@
               color: #fff;
               transition: 500ms;
             }
+            .dash{
+              display: none;
+            }
 
 
             .home {
               background-color: #333333;
               border-top: 4px solid #50C6C6;
-              padding: 30px 5px;
+              padding: 25px 5px;
               width: 70px;
               text-align: center;
               font-size: 0.8em;
               text-transform: uppercase;
+              margin: 0;
 
 
               &:hover {
@@ -228,10 +239,31 @@
             .pages {
               padding: 30px 5px;
               width: 90px;
+              height: 94px;
               text-align: center;
               position: relative;
               border-top: 4px solid #272727;
-
+              .nav_item{
+                display: none;
+              }
+              .sub{
+                display: none;
+              }
+              .showsub{
+                position: relative;
+                &:hover{
+                  .sub{
+                    display: block;
+                    position: absolute;
+                    top: 0em;
+                    left: 190px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    a{
+                      padding:  10px 4px;
+                    }
+                  }
+                }
+              }
               &:hover {
                 background-color: #333333;
                 border-top: 4px solid #50C6C6;
@@ -240,7 +272,7 @@
                   width: 190px;
                   display: block;
                   position: absolute;
-                  top: 80px;
+                  top: 90px;
                   background-color: rgba(0, 0, 0, 0.5);
 
 
@@ -260,18 +292,12 @@
                   }
                 }
               }
-
-
-
-              div {
-                display: none;
-
-              }
             }
 
             .elements {
               padding: 30px 5px;
               width: 100px;
+              height: 94px;
               text-align: center;
               border-top: 4px solid #272727;
 
@@ -283,7 +309,7 @@
                   width: 190px;
                   display: block;
                   position: absolute;
-                  top: 80px;
+                  top: 90px;
                   background-color: rgba(0, 0, 0, 0.5);
 
                   li {
@@ -308,6 +334,7 @@
             .blogs {
               padding: 30px 5px;
               width: 100px;
+              height: 94px;
               text-align: center;
               border-top: 4px solid #272727;
 
@@ -341,7 +368,7 @@
                   width: 250px;
                   display: block;
                   position: absolute;
-                  top: 80px;
+                  top: 90px;
                   background-color: rgba(0, 0, 0, 0.5);
 
                   li {
@@ -361,6 +388,9 @@
 
               div {
                 .blogs_overview {
+                  .fa{
+                    margin-left: 8px;
+                  }
                   display: none;
 
 
@@ -372,6 +402,9 @@
                 }
 
                 .blogs_post {
+                  .fa{
+                    margin-left: 8px;
+                  }
                   display: none;
 
                   div {
@@ -384,6 +417,7 @@
             .gallery {
               padding: 30px 5px;
               width: 100px;
+              height: 94px;
               text-align: center;
               border-top: 4px solid #272727;
               margin: 0;
@@ -396,7 +430,7 @@
                   width: 190px;
                   display: block;
                   position: absolute;
-                  top: 80px;
+                  top: 90px;
                   right: 15px;
                   background-color: rgba(0, 0, 0, 0.5);
 
@@ -441,6 +475,7 @@
 
         .column_1 {
           grid-column: span 4;
+          padding-top: 1.5em;
         }
 
         .column_2 {
@@ -506,11 +541,11 @@
       }
 
       .section_3 {
-        padding: 0em 2em;
+        padding: 5em 2em;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 15px;
-        margin: 5em 0em;
+        gap: 35px;
+
 
 
         img {
@@ -519,12 +554,12 @@
         }
 
         .box1 {
-          grid-column: span 6;
+          grid-column: 1/6;
           margin: 0em 0em;
           width: 100%;
 
           .jane_container {
-
+            margin-bottom: 2em;
             display: flex;
             justify-content: space-between;
 
@@ -543,7 +578,7 @@
         }
 
         .box2 {
-          grid-column: span 6;
+          grid-column: 7/12;
           text-align: center;
           margin: 0em 0em;
           width: 100%;
@@ -555,7 +590,7 @@
         padding: 0em 2em;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 15px;
+        column-gap: 35px;
         background-color: #fff;
         padding: 1em;
 
@@ -614,15 +649,27 @@
       }
     }
 
-    .transform2 {
-      border: 1px solid;
-      font-size: 1.5em;
-      width: 230px;
-      margin: 2em auto;
-      margin-top: -35px;
+   .prefooter{
+      .transform2 {
+        border: 1px solid;
+        font-size: 1.5em;
+        width: 290px;
+        margin: 2em auto;
+        margin-top: -35px;
+        .glyphicon {
+          width: 30px;
+          height: 30px;
+          font-size: 1.4em;
+        
+    
+        }
+       
+        
+      }
     }
 
     footer {
+      padding: 1em 0em;
       text-align: center;
       margin: 2em 0em;
       background-color: #ffffff;
