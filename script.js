@@ -197,15 +197,59 @@ function transform() {
   let getb = document.body;
   let getSec = document.querySelector('.section_4');
 
+  let getSec1 = document.querySelector('.section_1');
+  let getSec3 = document.querySelector('.section_3');
+  let prefooter = document.querySelector('.prefooter');
+  let changeCon = document.querySelector('.change_container');
+
+
+
+  
+
+  
+
   if (getb.classList.contains('.dark')) {
-    getb.style.backgroundColor = '#F5F5F5';
-    getb.style.color = '#000';
+    getSec1.style.backgroundColor = '#F5F5F5';
+    getSec1.style.color = '#000';
+
+
     getSec.style.backgroundColor = '#fff';
+    getSec.style.color = '#000';
+
+
+   getSec3.style.backgroundColor = '#F5F5F5';
+   getSec3.style.color = '#000';
+
+   prefooter.style.backgroundColor = '#ffffff';
+   prefooter.style.color = '#000';
+
+   changeCon.style.color = '#000';
+   getb.style.backgroundColor = '#fff';
+   getb.style.color = '#000';
+
+
     getb.classList.remove('.dark');
   } else {
-    getb.style.backgroundColor = 'rgba(39, 39, 39, 0.8';
-    getb.style.color = '#fff';
-    getSec.style.backgroundColor = 'rgba(39, 39, 39, 0.8';
+    getSec1.style.backgroundColor = '#272727';
+     getSec1.style.color = '#fff';
+
+     getb.style.backgroundColor = '#272727';
+     getb.style.color = '#fff';
+
+     getSec.style.backgroundColor = '#272727';
+     getSec.style.color = '#fff';
+
+
+    getSec3.style.backgroundColor = '#272727';
+    getSec3.style.color = '#fff';
+
+    prefooter.style.backgroundColor = '#272727';
+    prefooter.style.color = '#fff';
+
+    changeCon.style.color = '#56AED4';
+
+
+    
     getb.classList.add('.dark');
   }
 }

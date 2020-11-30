@@ -215,6 +215,9 @@ body {
             padding: 0em;
             text-align: left;
           }
+          .sub{
+            display:none;
+          }
 
           a,
           li {
@@ -761,7 +764,11 @@ body {
     text-align: center;
     margin: 2em 0em;
 
-    a {}
+    a{
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
 }
 

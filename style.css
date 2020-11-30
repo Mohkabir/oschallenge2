@@ -215,6 +215,10 @@ body header .navigation nav ul div {
   text-align: left;
 }
 
+body header .navigation nav ul .sub {
+  display: none;
+}
+
 body header .navigation nav ul a,
 body header .navigation nav ul li {
   text-decoration: none;
@@ -805,6 +809,10 @@ body .prefooter .transform2 .glyphicon {
 body footer {
   text-align: center;
   margin: 2em 0em;
+}
+
+body footer a:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 1030px) {
